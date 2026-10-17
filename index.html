@@ -1,18 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        />
 
-<body>
-    start
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Project</title>
+    </head>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+    <body>
+        <main class="room" id="room">
+            <div class="room-light" id="roomLight"></div>
 
+            <div class="fireflies" id="fireflies"></div>
+
+            <section class="lamp-side">
+                <div class="lamp-container" id="lampContainer">
+                    <div class="lamp-glow"></div>
+                    <div class="lamp-head"></div>
+
+                    <div class="light-beam"></div>
+
+                    <div class="lamp-stem"></div>
+                    <lamp class="lamp-base"></lamp>
+
+                    <div class="desk-surface"></div>
+
+                    <svg class="string-svg" aria-hidden="true">
+                        <path id="stringPath" d="M 0 0 L 0 80"></path>
+                    </svg>
+
+                    <div class="string-handle" id="stringHandle"></div>
+                </div>
+            </section>
+
+            <section class="login-side">
+                <form class="glass login-card" id="loginForm">
+                    <div class="glass-line"></div>
+
+                    <div class="login-heading">
+                        <h2>Welcome Back</h2>
+                        <p>Enter your details for access</p>
+                    </div>
+
+                    <div class="inputs">
+                        <label class="input-wrap">
+                            <span class="input-icon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input
+                                type="text"
+                                placeholder="Username"
+                                autocomplete="username"
+                                required
+                            />
+                        </label>
+
+                        <label class="input-wrap">
+                            <span class="input-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                autocomplete="email"
+                                required
+                            />
+                        </label>
+
+                        <label class="input-wrap">
+                            <span class="input-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                autocomplete="current-password"
+                                required
+                            />
+                        </label>
+                    </div>
+
+                    <button class="sign-in" type="submit">Sign In</button>
+
+                    <div class="divider">
+                        <span></span>
+                        <b>OR CONTINUE WITH</b>
+                        <span></span>
+                    </div>
+
+                    <div class="socials">
+                        <button class="social-btn" type="button">
+                            <span class="google-icon">G</span> Google
+                        </button>
+
+                        <button class="social-btn" type="button">
+                            <span class="github-icon">.</span> Github
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
