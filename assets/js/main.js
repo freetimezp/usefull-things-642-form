@@ -93,8 +93,8 @@ function createFireflies() {
         dot.style.setProperty("--delay", `${random(0, 3)}s`);
 
         for (let n = 1; n <= 5; n++) {
-            dot.style.setProperty(`--x${n}`, `${random(0, 100)}vw`);
-            dot.style.setProperty(`--y${n}`, `${random(0, 100)}vh`);
+            dot.style.setProperty(`--x${n}`, `${Math.random(0, 100) * 100}vw`);
+            dot.style.setProperty(`--y${n}`, `${Math.random(0, 100) * 100}vh`);
         }
 
         fireflies.appendChild(dot);
